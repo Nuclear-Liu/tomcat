@@ -838,6 +838,9 @@ public final class StandardServer extends LifecycleMBeanBase implements Server {
                 cl = cl.getParent();
             }
         }
+        /**
+         * 初始化遍历所有的 {@link Service} 更新生命周期状态为 {@link LifecycleState#INITIALIZED}.
+         */
         // Initialize our defined Services
         for (Service service : services) {
             service.init();

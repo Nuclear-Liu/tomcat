@@ -549,6 +549,9 @@ public class StandardService extends LifecycleMBeanBase implements Service {
         synchronized (connectorsLock) {
             for (Connector connector : connectors) {
                 try {
+                    /**
+                     * 初始化 {@link Connector}，生命周期状体更新为 {@link LifecycleState#INITIALIZED}
+                     */
                     connector.init();
                 } catch (Exception e) {
                     String message = sm.getString(

@@ -23,6 +23,8 @@ package org.apache.catalina;
  * the functionality they support) in order to provide a consistent mechanism
  * to start and stop the component.
  * <br>
+ * 声明周期管理--功能描述接口.
+ * <br>
  * The valid state transitions for components that support {@link Lifecycle}
  * are:
  * <pre>
