@@ -32,7 +32,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
  * <br/>
  * 生命周期管理接口模板抽象类：实现 {@link Lifecycle#start()} 与 {@link Lifecycle#stop()} 状态转换规则.
  */
-public abstract class LifecycleBase implements Lifecycle {
+public abstract class LifecycleBase implements Lifecycle, Service {
 
     private static final Log log = LogFactory.getLog(LifecycleBase.class);
 
